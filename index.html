@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#173e35" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Beetroot Store</title>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><b>BR</b><strong>beetroot <small>Store</small></strong></div>
+      <div class="store-mini"><span>RS</span><div><b>Ravi Silks</b><small>One Town Market</small></div><i></i></div>
+      <nav aria-label="Store navigation">
+        <button class="nav active" data-view="home">⌂ <span>Home</span></button>
+        <button class="nav" data-view="products">▦ <span>Products</span></button>
+        <button class="nav" data-view="sale">✦ <span>Sale Mela</span></button>
+        <button class="nav" data-view="customers">◌ <span>Customers</span><em>3</em></button>
+        <button class="nav" data-view="verify">✓ <span>Purchase checks</span><em class="orange">2</em></button>
+        <button class="nav" data-view="profile">◉ <span>Store profile</span></button>
+        <button class="nav" data-view="qr">⌁ <span>Store QR</span></button>
+      </nav>
+      <button class="nav bottom" data-view="settings">⚙ <span>Settings</span></button>
+    </aside>
+    <main>
+      <header><button class="menu" id="menu">☰</button><div><small>TUESDAY, 20 OCTOBER 2026</small><h1 id="title">Good morning, Ravi <i>✦</i></h1></div><div class="top"><button id="bell">♧<i></i></button><select id="lang"><option>English</option><option>తెలుగు</option><option>हिन्दी</option><option>اردو</option></select><b>RS</b></div></header>
+      <section id="app"></section>
+    </main>
+  </div>
+  <div id="toast"></div><div id="modal" class="backdrop"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
